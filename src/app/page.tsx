@@ -3,6 +3,8 @@ import { fetchNews } from "../../lib/getNews";
 import { fetchCustomNews } from "../../lib/customNews";
 import Navbar from "@/components/Navbar";
 
+export const revalidate = 0;
+
 export default async function HomePage() {
   const [apiNews, adminNews] = await Promise.all([
     fetchNews(),        // News API articles
