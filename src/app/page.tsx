@@ -14,7 +14,8 @@ export default async function HomePage() {
     title: item.title,
     description: item.description || "",
     urlToImage: item.image_url,
-    url: item.url || null, // clicking opens external link ONLY
+    url: item.url || null,
+    created_at: item.created_at,   // <-- ADD THIS
   }));
 
   // --- API News is already in NewsItem format ---
@@ -23,6 +24,7 @@ export default async function HomePage() {
     description: item.description || "",
     urlToImage: item.urlToImage,
     url: item.url || null,
+    publishedAt: item.publishedAt, // <-- ADD THIS
   }));
 
   // --- Admin first, API next ---
