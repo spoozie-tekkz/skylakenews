@@ -7,7 +7,10 @@ export type NewsItem = {
   urlToImage: string | null;
   description?: string;
   url?: string | null;
+  publishedAt?: string; 
+  created_at?: string;  
 };
+
 
 interface CNNGridProps {
   news: NewsItem[];
@@ -31,6 +34,17 @@ export default function CNNGrid({ news }: CNNGridProps) {
 
   const main = visibleNews[0];
   const rest = visibleNews.slice(1);
+
+  function formatDate(dateString?: string) {
+    if (!dateString) return "";
+    return new Date(dateString).toLocaleString("en-US", {
+      month: "short",
+      day: "numeric",
+      hour: "numeric",
+      minute: "2-digit"
+    });
+  }
+
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-8">
@@ -66,6 +80,10 @@ export default function CNNGrid({ news }: CNNGridProps) {
           {main.description && (
             <p className="text-gray-700">{main.description}</p>
           )}
+
+          <p className="text-xs text-gray-500 mt-2">
+            {formatDate(main.publishedAt || main.created_at)}
+          </p>
         </div>
       </div>
 
@@ -96,6 +114,10 @@ export default function CNNGrid({ news }: CNNGridProps) {
                 {story.description}
               </p>
             )}
+
+            <p className="text-xs text-gray-500">
+              {formatDate(story.publishedAt || story.created_at)}
+            </p>
           </a>
         ))}
       </div>
