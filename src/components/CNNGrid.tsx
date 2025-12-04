@@ -114,7 +114,7 @@ export default function CNNGrid({ news }: CNNGridProps) {
             href={story.url || undefined}
             target={story.url ? "_blank" : undefined}
             rel="noreferrer"
-            className="border-b pb-4 flex flex-col gap-3 cursor-pointer"
+            className="pb-4 flex flex-col gap-3 cursor-pointer"
           >
             {story.urlToImage && (
               <img
