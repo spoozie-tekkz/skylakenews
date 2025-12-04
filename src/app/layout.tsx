@@ -16,7 +16,7 @@ export const metadata = {
   title: "SkyLake News – Breaking & Latest News",
   description: "Reliable breaking news, global headlines, and real-time updates — powered by SkyLake News.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "SkyLake News",
