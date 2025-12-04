@@ -71,7 +71,7 @@ export default function AdminLogin() {
                 placeholder="Enter your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-[#f3f3f3] border border-[#e5e5e5] rounded-md py-[10px] px-3 text-[15px] text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+                className="w-full bg-[#f3f3f3] border border-[#e5e5e5] rounded-md py-[10px] px-3 text-[16px] text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
               />
             </div>
 
@@ -85,7 +85,7 @@ export default function AdminLogin() {
                 placeholder="Enter your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full bg-[#f3f3f3] border border-[#e5e5e5] rounded-md py-[10px] px-3 text-[15px] text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+                className="w-full bg-[#f3f3f3] border border-[#e5e5e5] rounded-md py-[10px] px-3 text-[16px] text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
               />
             </div>
 
