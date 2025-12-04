@@ -15,10 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "SkyLake News – Breaking & Latest News",
   description: "Reliable breaking news, global headlines, and real-time updates — powered by SkyLake News.",
-  icons: [
-    { rel: "icon", url: "/favicon.png" },
-    { rel: "apple-touch-icon", url: "/favicon.png" },
-  ],
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     title: "SkyLake News",
     description: "Breaking news. Real-time coverage. Global headlines.",
