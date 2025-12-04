@@ -13,7 +13,7 @@ export default function AdminLogin() {
 
 
   const ADMIN_EMAIL = process.env.NEXT_PUBLIC_ADMIN_EMAIL;
-  const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD;
+  const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASS;
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
